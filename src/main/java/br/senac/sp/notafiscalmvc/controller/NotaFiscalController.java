@@ -10,5 +10,12 @@ package br.senac.sp.notafiscalmvc.controller;
  * @author lucas
  */
 public class NotaFiscalController {
+    public static boolean salvar(int numeroNota,double valorNota ){
+        System.out.println("Agora estou no controle");
+        System.out.println(numeroNota);
+        System.out.println(valorNota);
+        return true;
+        
+    }
     
 }
