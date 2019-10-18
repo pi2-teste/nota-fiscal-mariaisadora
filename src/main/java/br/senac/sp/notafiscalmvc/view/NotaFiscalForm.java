@@ -188,9 +188,9 @@ public class NotaFiscalForm extends javax.swing.JFrame {
     private void botaoSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoSalvarActionPerformed
         // TODO add your handling code here:
         System.out.println("nro nota");
-        System.out.println("Número da nota" + campoNumeroNota.getText());
-        System.out.println("Valor da nota" + campoValorNota.getText());
-        System.out.println("Nome do Produto" + campoNomeProduto.getText());
+        System.out.println("Número da nota: " + campoNumeroNota.getText());
+        System.out.println("Valor da nota: " + campoValorNota.getText());
+        System.out.println("Nome do Produto: " + campoNomeProduto.getText());
         double valorNota; int numeroNota; String nomeprodNota;
         valorNota = Double.parseDouble(campoValorNota.getText());
         numeroNota = Integer.parseInt(campoNumeroNota.getText());
@@ -200,8 +200,8 @@ public class NotaFiscalForm extends javax.swing.JFrame {
         
     }//GEN-LAST:event_botaoSalvarActionPerformed
     public void refreshTable(){
-        tableNota.invalidate();
-        tableNota.repaint();
+        tableNotas.invalidate();
+        tableNotas.repaint();
     }
     /**
      * @param args the command line arguments

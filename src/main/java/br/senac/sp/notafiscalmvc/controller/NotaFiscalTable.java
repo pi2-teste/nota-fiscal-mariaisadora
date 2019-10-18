@@ -24,7 +24,7 @@ import javax.swing.table.AbstractTableModel;
  * @author lucas
  */
 public class NotaFiscalTable extends AbstractTableModel {
-    private String[] columnNames = {"NumNota","ValNota"};
+    private String[] columnNames = {"NumNota","ValNota","NomeNota"};
 
     public int getColumnCount() {
         return 2;
@@ -51,11 +51,11 @@ public class NotaFiscalTable extends AbstractTableModel {
     }
 
     public void invalidate() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
 
     public void repaint() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+       
     }
 
 }
