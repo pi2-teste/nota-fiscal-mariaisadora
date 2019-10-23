@@ -27,7 +27,7 @@ public class NotaFiscalTable extends AbstractTableModel {
     private String[] columnNames = {"NumNota","ValNota","NomeNota"};
 
     public int getColumnCount() {
-        return 2;
+        return 3;
     }
 
     public int getRowCount() {
@@ -43,19 +43,12 @@ public class NotaFiscalTable extends AbstractTableModel {
         nota = NotaFiscalDAO.linha(row);
         if (col == 0)
             return nota.getNumNota();
+        if (col == 1)
+            return nota.getNomeNota();
         return nota.getValNota();
     }
 
     public Class getColumnClass(int c) {
         return getValueAt(0, c).getClass();
     }
-
-    public void invalidate() {
-        
-    }
-
-    public void repaint() {
-       
-    }
-
 }

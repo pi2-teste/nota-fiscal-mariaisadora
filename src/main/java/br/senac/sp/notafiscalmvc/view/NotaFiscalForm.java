@@ -63,6 +63,12 @@ public class NotaFiscalForm extends javax.swing.JFrame {
             }
         });
 
+        campoValorNota.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                campoValorNotaActionPerformed(evt);
+            }
+        });
+
         botaoSalvar.setText("Salvar");
         botaoSalvar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -199,6 +205,10 @@ public class NotaFiscalForm extends javax.swing.JFrame {
         refreshTable();
         
     }//GEN-LAST:event_botaoSalvarActionPerformed
+
+    private void campoValorNotaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoValorNotaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_campoValorNotaActionPerformed
     public void refreshTable(){
         tableNotas.invalidate();
         tableNotas.repaint();
